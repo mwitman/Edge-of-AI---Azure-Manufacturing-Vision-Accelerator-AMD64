@@ -79,7 +79,7 @@ stages:
           deploymentFilePath: $(Pipeline.Workspace)/config/deployment.amd64_cpu.amd64.json
           azureSubscription: $(AZURE_SERVICE_CONNECTION)
           iothubname: $(IOT_HUB)
-          deploymentid: <your deployment id>
+          deploymentid: 'visionai'
           priority: '10'
           deviceOption: 'Single Device'
-          deviceId: '<your device name>'
+          deviceId: 'visionai'
