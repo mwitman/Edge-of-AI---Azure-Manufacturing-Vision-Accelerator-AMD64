@@ -17,7 +17,7 @@ pr:
   autoCancel: true
   
 variables:
-  - group: "<your variable group name>"
+  - group: "VisionAI-variables"
  
 stages:
   - stage: Build
