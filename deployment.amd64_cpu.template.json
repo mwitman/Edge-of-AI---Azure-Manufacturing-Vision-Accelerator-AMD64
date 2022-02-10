@@ -74,11 +74,11 @@
                   "IpcMode": "host",
                   "NetworkMode": "host",
                   "Binds": [
-                    "/home/<your user id>/edge_assets/frame_volume:/frame_volume",
-                    "/home/<your user id>/edge_assets/annotated_frame_volume:/annotated_frame_volume",
-                    "/home/<your user id>/edge_assets/retrain_frame_volume:/retrain_frame_volume",
-                    "/home/<your user id>/edge_assets/model_volume:/model_volume",
-                    "/home/<your user id>/edge_assets/image_sink_volume:/image_sink_volume"
+                    "/home/azureUser/edge_assets/frame_volume:/frame_volume",
+                    "/home/azureUser/edge_assets/annotated_frame_volume:/annotated_frame_volume",
+                    "/home/azureUser/edge_assets/retrain_frame_volume:/retrain_frame_volume",
+                    "/home/azureUser/edge_assets/model_volume:/model_volume",
+                    "/home/azureUser/edge_assets/image_sink_volume:/image_sink_volume"
                   ],
                   "Mounts": [
                     {
@@ -185,7 +185,7 @@
                 "value": "DefectDB"
               },
               "MSSQL_PWD": {
-                "value": "<your strong pwd>"
+                "value": "P@ssW0rd123$!"
               }
             }
           },
@@ -199,7 +199,7 @@
               "createOptions": {
                 "HostConfig": {
                   "Binds": [
-                    "/home/<your user id>/edge_assets/model_volume:/model_volume"
+                    "/home/azureUser/edge_assets/model_volume:/model_volume"
                   ]
                 },
                 "Mounts": [
@@ -230,9 +230,9 @@
                 "HostConfig": {
                   "NetworkMode": "host",
                   "Binds": [
-                    "/home/<your user id>/edge_assets/frame_volume:/frame_volume",
-                    "/home/<your user id>/edge_assets/annotated_frame_volume:/annotated_frame_volume",
-                    "/home/<your user id>/edge_assets/retrain_frame_volume:/retrain_frame_volume"
+                    "/home/azureUser/edge_assets/frame_volume:/frame_volume",
+                    "/home/azureUser/edge_assets/annotated_frame_volume:/annotated_frame_volume",
+                    "/home/azureUser/edge_assets/retrain_frame_volume:/retrain_frame_volume"
                   ],
                   "Mounts": [
                     {
@@ -285,9 +285,9 @@
                 "HostConfig": {
                   "NetworkMode": "host",
                   "Binds": [
-                    "/home/<your user id>/edge_assets/frame_volume:/frame_volume",
-                    "/home/<your user id>/edge_assets/annotated_frame_volume:/annotated_frame_volume",
-                    "/home/<your user id>/edge_assets/retrain_frame_volume:/retrain_frame_volume"
+                    "/home/azureUser/edge_assets/frame_volume:/frame_volume",
+                    "/home/azureUser/edge_assets/annotated_frame_volume:/annotated_frame_volume",
+                    "/home/azureUser/edge_assets/retrain_frame_volume:/retrain_frame_volume"
                   ],
                   "Mounts": [
                     {
@@ -369,7 +369,7 @@
                 "value": "Y"
               },
               "MSSQL_SA_PASSWORD": {
-                "value": "<your strong pwd>"
+                "value": "P@ssW0rd123$!"
               },
               "MSSQL_LCID": {
                 "value": "1033"
@@ -408,8 +408,8 @@
                   },
                   "NetworkMode": "host",
                   "Binds": [
-                    "/home/<your user id>/edge_assets/frame_volume:/usr/share/grafana/public/raw-img",
-                    "/home/<your user id>/edge_assets/annotated_frame_volume:/usr/share/grafana/public/annotated-img"
+                    "/home/azureUser/edge_assets/frame_volume:/usr/share/grafana/public/raw-img",
+                    "/home/azureUser/edge_assets/annotated_frame_volume:/usr/share/grafana/public/annotated-img"
                   ],
                   "Mounts": [
                     {
